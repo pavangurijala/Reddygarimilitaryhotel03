@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Reddy Gari Military Hotel – Authentic Telangana Cuisine | Kodi Kura, Bagara Rice</title>
+  <meta name="description" content="Reddy Gari Military Hotel – Authentic Telangana traditional food. Specialising in Kodi Kura, Natu Kodi, Meka Pothu, Bagara Rice & Chepala Pulusu. Open every day 12 PM – 11:45 PM. Call 8121654612." />
+  <meta name="keywords" content="Reddy Gari Military Hotel, Telangana food, military hotel, Kodi Kura, Bagara Rice, Natu Kodi Kura, Meka Pothu Kura, Chepala Pulusu, Talakaya Kura, authentic Telangana cuisine, Hyderabad military hotel" />
+  <meta name="author" content="Reddy Gari Military Hotel" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://reddygarimilitaryhotel.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://reddygarimilitaryhotel.com/" />
+  <meta property="og:title" content="Reddy Gari Military Hotel – Taste of Telangana Tradition" />
+  <meta property="og:description" content="Experience authentic Telangana military cuisine – Kodi Kura, Bagara Rice, Natu Kodi Kura and more. Open daily 12 PM – 11:45 PM." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:site_name" content="Reddy Gari Military Hotel" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reddy Gari Military Hotel – Taste of Telangana Tradition" />
+  <meta name="twitter:description" content="Authentic Telangana food – Kodi Kura, Bagara Rice, Natu Kodi & more. Open daily 12 PM – 11:45 PM." />
+  <meta name="twitter:image" content="images/logo.png" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Reddy Gari Military Hotel",
+    "description": "Authentic Telangana traditional military cuisine including Kodi Kura, Bagara Rice, Natu Kodi Kura, Meka Pothu Kura and Chepala Pulusu.",
+    "url": "https://reddygarimilitaryhotel.com/",
+    "logo": "images/logo.png",
+    "image": "images/fv.jpeg",
+    "telephone": "+918121654612",
+    "servesCuisine": "Telangana, Indian, Military Hotel",
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Su 12:00-23:45",
+    "sameAs": [
+      "https://www.instagram.com/reddygarimilitary_hotel",
+      "https://www.youtube.com/@reddygarimilitary_hotel"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <img src="images/logo.png" alt="Reddy Gari Military Hotel Logo" class="loader-logo" />
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <p class="loader-text">Taste of Telangana Tradition</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Reddy Gari Military Hotel Logo" width="50" height="50" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/reddygarimilitary_hotel" target="_blank" class="social-icon" id="nav-insta"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@reddygarimilitary_hotel" target="_blank" class="social-icon" id="nav-yt"
+          aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-3d-container" id="hero3d"></div>
+    <div class="hero-content">
+      <div class="hero-badge">&#10022; Est. Authentic Telangana &#10022;</div>
+      <div class="hero-logo-wrap">
+        <img src="images/logo.png" alt="Reddy Gari Military Hotel" class="hero-logo" id="heroLogo" />
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">REDDY GARI</span>
+        <span class="title-line gold">MILITARY HOTEL</span>
+      </h1>
+      <p class="hero-caption">&#10022; Taste of Telangana Tradition &#10022;</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-primary" id="viewMenuBtn">View Our Menu</a>
+        <a href="#gallery" class="btn-outline" id="viewGalleryBtn">Explore Gallery</a>
+      </div>
+    </div>
+
+    <div class="hero-hotel-view">
+      <img src="images/fv.jpeg" alt="Reddy Gari Military Hotel - Front View of Authentic Telangana Restaurant" id="hotelFrontImg" width="800" height="600" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-bg-text">TRADITION</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Our Story</span>
+        <h2 class="section-title">The Spirit of <span class="gold">Military Cuisine</span></h2>
+        <div class="title-divider"><span></span><img src="images/logo.png" alt="Restaurant Icon" width="30" height="30" /><span></span></div>
+      </div>
+
+      <!-- About Us Description -->
+      <div class="about-description">
+        <p>Reddy Gari Military Hotel serves <strong>authentic Telangana traditional food</strong> with rich spices and
+          homely flavors. We specialize in fresh, hygienic and affordable meals including mutton, chicken, and
+          country-style curries prepared daily — straight from the heart of Telangana to your plate.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card" data-tilt>
+          <div class="about-card-icon">&#127831;</div>
+          <h3>Authentic Recipes</h3>
+          <p>Every dish crafted from generations-old Telangana military recipes, bringing bold spices and rich flavors
+            to your plate.</p>
+        </div>
+        <div class="about-card featured" data-tilt>
+          <div class="about-card-icon">&#9876;&#65039;</div>
+          <h3>Military Tradition</h3>
+          <p>Rooted in the warrior spirit of Telangana — hearty, wholesome meals that have fed soldiers and kings alike
+            for centuries.</p>
+        </div>
+        <div class="about-card" data-tilt>
+          <div class="about-card-icon">&#127798;&#65039;</div>
+          <h3>Pure Ingredients</h3>
+          <p>Farm-fresh chicken, tender mutton, and locally sourced spices ensure every bite is an unforgettable
+            experience.</p>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span>
+          <p>Signature Dishes</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="1000">0</span><span class="stat-plus">+</span>
+          <p>Happy Guests Daily</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+          <p>Pure Tradition</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">&#9733;</span>
+          <p>Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+    <div class="menu-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What We Serve</span>
+        <h2 class="section-title">Our <span class="gold">Royal Menu</span></h2>
+        <div class="title-divider"><span></span><img src="images/logo.png" alt="" /><span></span></div>
+      </div>
+      <div class="menu-scroll-wrapper" id="menuWrapper">
+        <div class="menu-paper-container">
+          <div class="paper-roll top-roll">
+            <div class="roll-cylinder"></div>
+          </div>
+          <div class="paper-sheet" id="paperSheet">
+            <div class="paper-inner">
+              <img src="images/menu.jpg" alt="Reddy Gari Military Hotel Menu" loading="lazy" id="menuImg" />
+            </div>
+          </div>
+          <div class="paper-roll bottom-roll">
+            <div class="roll-cylinder"></div>
+          </div>
+        </div>
+        <div class="menu-hint"><span>&#128269; Hover to zoom</span></div>
+      </div>
+      <div class="menu-highlights">
+        <div class="menu-highlight-card">
+          <img src="images/kodi_kura.jpeg" alt="Kodi Kura" class="mh-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="mh-icon" style="display:none;">&#127831;</div>
+          <h4>Kodi Kura</h4>
+          <p>From &#8377;379</p>
+        </div>
+        <div class="menu-highlight-card">
+          <img src="images/natu_kodi_kura.jpeg" alt="Natu Kodi Kura" class="mh-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="mh-icon" style="display:none;">&#128019;</div>
+          <h4>Natu Kodi Kura</h4>
+          <p>From &#8377;459</p>
+        </div>
+        <div class="menu-highlight-card">
+          <img src="images/meka_pothu_kura.jpeg" alt="Meka Pothu Kura" class="mh-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="mh-icon" style="display:none;">&#128016;</div>
+          <h4>Meka Pothu Kura</h4>
+          <p>From &#8377;649</p>
+        </div>
+        <div class="menu-highlight-card">
+          <img src="images/bagara_rice.jpeg" alt="Bagara Rice" class="mh-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="mh-icon" style="display:none;">&#127834;</div>
+          <h4>Bagara Rice</h4>
+          <p>From &#8377;100</p>
+        </div>
+        <div class="menu-highlight-card">
+          <img src="images/koramenu_chepala_pulusu.jpeg" alt="Korameenu Chepala Pulusu" class="mh-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="mh-icon" style="display:none;">&#128031;</div>
+          <h4>Korameenu Chepala Pulusu</h4>
+          <p>From &#8377;499</p>
+        </div>
+        <div class="menu-highlight-card">
+          <img src="images/gutti_vankaya_masala.jpeg" alt="Gutti Vankaya Masala" class="mh-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="mh-icon" style="display:none;">&#129746;</div>
+          <h4>Gutti Vankaya Masala</h4>
+          <p>&#8377;249</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTERIOR -->
+  <section class="exterior-section">
+    <div class="exterior-parallax" id="exteriorParallax">
+      <img src="images/fv.jpeg" alt="Reddy Gari Military Hotel Front View" class="exterior-img" />
+      <div class="exterior-overlay"></div>
+      <div class="exterior-content">
+        <h2>Visit Us Today</h2>
+        <p>Experience the grandeur of Telangana's finest military hotel</p>
+        <a href="#contact" class="btn-primary" id="visitUsBtn">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Inside Our World</span>
+        <h2 class="section-title">Restaurant <span class="gold">Gallery</span></h2>
+        <div class="title-divider"><span></span><img src="images/logo.png" alt="" /><span></span></div>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" id="galleryItem0">
+          <div class="gallery-card">
+            <img src="images/interior1.jpg" alt="Restaurant Interior - Reception" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h4>Reception Area</h4>
+                <p>Where your dining journey begins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item large" id="galleryItem1">
+          <div class="gallery-card">
+            <img src="images/interior2.jpg" alt="Restaurant Dining Hall" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h4>Dining Hall</h4>
+                <p>Spacious seating for families &amp; groups</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" id="galleryItem2">
+          <div class="gallery-card">
+            <img src="images/fv.jpeg" alt="Hotel Exterior" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h4>Hotel Exterior</h4>
+                <p>Iconic Telangana Military Hotel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" id="galleryItem3">
+          <div class="gallery-card">
+            <img src="images/interior3.jpg" alt="Restaurant Wide View" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h4>Restaurant View</h4>
+                <p>Warm ambiance with traditional decor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item large" id="galleryItem4">
+          <div class="gallery-card">
+            <img src="images/interior4.jpg" alt="Seating Arrangement" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h4>Elegant Seating</h4>
+                <p>Comfortable &amp; stylish dining experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" id="galleryItem5">
+          <div class="gallery-card">
+            <img src="images/interior5.jpg" alt="Restaurant Interior Wide" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <h4>Interior View</h4>
+                <p>Spacious hall for every occasion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-social-cta">
+        <p>Follow our culinary journey on social media</p>
+        <div class="social-cta-buttons">
+          <a href="https://www.instagram.com/reddygarimilitary_hotel" target="_blank" class="social-cta-btn instagram"
+            id="instaBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            @reddygarimilitary_hotel
+          </a>
+          <a href="https://www.youtube.com/@reddygarimilitary_hotel" target="_blank" class="social-cta-btn youtube"
+            id="ytBtn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            reddygarimilitary_hotel
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALTIES -->
+  <section class="specialties-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Must Try</span>
+        <h2 class="section-title">Signature <span class="gold">Specialties</span></h2>
+        <div class="title-divider"><span></span><img src="images/logo.png" alt="" /><span></span></div>
+      </div>
+      <div class="specialties-track">
+        <div class="specialties-slider" id="specialtiesSlider">
+          <div class="specialty-card">
+            <div class="sc-glow"></div>
+            <img src="images/kodi_kura.jpeg" class="sc-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="sc-emoji" style="display:none;">&#127831;</div>
+            <h3>Kodi Kura</h3>
+            <p>Classic chicken curry with Bagara Rice &amp; Pachi Pulusu</p>
+            <div class="sc-price">From &#8377;379</div>
+          </div>
+          <div class="specialty-card">
+            <div class="sc-glow"></div>
+            <img src="images/natu_kodi_kura.jpeg" class="sc-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="sc-emoji" style="display:none;">&#128019;</div>
+            <h3>Natu Kodi Kura</h3>
+            <p>Country chicken curry — bold, rustic, unforgettable</p>
+            <div class="sc-price">From &#8377;459</div>
+          </div>
+          <div class="specialty-card">
+            <div class="sc-glow"></div>
+            <img src="images/meka_pothu_kura.jpeg" class="sc-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="sc-emoji" style="display:none;">&#128016;</div>
+            <h3>Meka Pothu Kura</h3>
+            <p>Goat mutton curry cooked in traditional Telangana style</p>
+            <div class="sc-price">From &#8377;649</div>
+          </div>
+          <div class="specialty-card">
+            <div class="sc-glow"></div>
+            <img src="images/koramenu_chepala_pulusu.jpeg" class="sc-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="sc-emoji" style="display:none;">&#128031;</div>
+            <h3>Chepala Pulusu</h3>
+            <p>Fish curry — tamarind-rich gravy with Rohu fish</p>
+            <div class="sc-price">From &#8377;499</div>
+          </div>
+          <div class="specialty-card">
+            <div class="sc-glow"></div>
+            <img src="images/talakaya_kura.jpeg" class="sc-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="sc-emoji" style="display:none;">&#127830;</div>
+            <h3>Talakaya Kura</h3>
+            <p>Goat head curry — a true military hotel classic</p>
+            <div class="sc-price">From &#8377;459</div>
+          </div>
+          <div class="specialty-card">
+            <div class="sc-glow"></div>
+            <img src="images/bagara_rice.jpeg" class="sc-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="sc-emoji" style="display:none;">&#127834;</div>
+            <h3>Bagara Rice</h3>
+            <p>Fragrant basmati rice with whole spices — the perfect companion</p>
+            <div class="sc-price">From &#8377;100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Find Us</span>
+        <h2 class="section-title">Visit <span class="gold">Reddy Gari Military Hotel</span></h2>
+        <div class="title-divider"><span></span><img src="images/logo.png" alt="" /><span></span></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contactPhone">
+            <div class="cc-icon">&#128222;</div>
+            <div class="cc-content">
+              <h4>Call Us</h4>
+              <a href="tel:8121654612">8121654612</a>
+              <p>Available for reservations &amp; inquiries</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contactHours">
+            <div class="cc-icon">&#128336;</div>
+            <div class="cc-content">
+              <h4>Opening Hours</h4>
+              <p>Every Day: 12:00 PM - 11:45 PM</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contactInsta">
+            <div class="cc-icon">&#128248;</div>
+            <div class="cc-content">
+              <h4>Instagram</h4>
+              <a href="https://www.instagram.com/reddygarimilitary_hotel" target="_blank">@reddygarimilitary_hotel</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contactYt">
+            <div class="cc-icon">&#9654;&#65039;</div>
+            <div class="cc-content">
+              <h4>YouTube</h4>
+              <a href="https://www.youtube.com/@reddygarimilitary_hotel" target="_blank">reddygarimilitary_hotel</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-logo-display">
+          <div class="logo-3d-wrapper" id="logo3dWrapper">
+            <div class="logo-glow-ring"></div>
+            <img src="images/logo.png" alt="Reddy Gari Military Hotel" class="contact-logo-img" />
+            <div class="logo-particles" id="logoParticles"></div>
+          </div>
+          <div class="contact-tagline">
+            <h3>Taste of Telangana Tradition</h3>
+            <p>Every meal is a celebration of our heritage</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Logo" />
+          <p>Reddy Gari Military Hotel</p>
+          <span>&#10022; Taste of Telangana Tradition &#10022;</span>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h5>Follow Us</h5>
+          <a href="https://www.instagram.com/reddygarimilitary_hotel" target="_blank" class="footer-social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            Instagram
+          </a>
+          <a href="https://www.youtube.com/@reddygarimilitary_hotel" target="_blank" class="footer-social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            YouTube
+          </a>
+        </div>
+      </div>
+
+      <!-- YouTube Shorts -->
+      <div class="footer-yt-shorts">
+        <h5>Watch Our Latest</h5>
+        <a href="https://youtube.com/shorts/NhipAY9AjUY?si=pemnE5bE7nTBIT0D" target="_blank" class="yt-shorts-card"
+          id="ytShortsLink">
+          <div class="yt-shorts-play">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </div>
+          <div class="yt-shorts-info">
+            <span class="yt-shorts-label">&#9654; YouTube Shorts</span>
+            <span class="yt-shorts-title">Reddy Gari Military Hotel</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Reddy Gari Military Hotel. All rights reserved.</p>
+        <p class="footer-tagline">&#10022; Taste of Telangana Tradition &#10022;</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&#x2715;</button>
+    <img src="" alt="" id="lightboxImg" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
